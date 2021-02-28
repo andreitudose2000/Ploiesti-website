@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Orasul Ploiesti </title>
+        <link rel="stylesheet" href="css/stil.css">
+        <link rel="icon" href="https://s12emagst.akamaized.net/products/5232/5231899/images/res_ab953fbc8cb13ee773cd21c58385d45b_full.jpg">
+    </head>
+    <body onload="Ora()">
+        <header> 
+            <img src="poze/logoploiesti.jpg" alt="Ploiesti" class="logo">
+            <div class="account">
+                <p id = "account-log"> Logat ca </p>
+                <button id="account-logout" onclick="logout()"> Logout </button>
+            </div>
+            <nav>
+                MENIU
+                <div class="dropdown">
+                    <ul class="stanga">
+                        <li> <a href="main.html">Acasa</a></li>
+                        <li> <a href="istorie.html">Istorie</a></li>
+                        <li> <a href="atractii.html">Atractii</a></li>
+                        <li> <a href="harti.html">Harta </a></li>
+                        <li> <a href="contact.html">Contact </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="main-container">
+            <img src="poze/panorama.jpg" alt="panorama" class="main-poza">
+            <div class="ploiesti">
+                <h1>Ploiesti</h1>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="OraVremea">
+            <p class="main-ora-text"> Ora Curentă (GMT+3)</p>
+            <p class="main-ora" id="ora">00:00</p>
+            <p class="main-ora" ></p>
+            
+            <p class="main-vremea-text">Vremea în Ploiești</p>
+            <div class = "Vremea">
+                <div><img src="https://image.flaticon.com/icons/svg/497/497208.svg" id="vremea-icon" width="70px" height="70px"></div>
+                <div class="main-vremea" id="vremea">00°C</div>
+            </div>
+
+            <script src="scripts/myscript.js"></script>
+        </div>
+
+
+
+
+
+
+
+        <div class="main-trivia">
+            <ul>
+                <li>
+                    <p class="mare">1503</p>
+                    <p class="mic">Prima atestare documentara</p>
+                </li>
+                <li>
+                    <p class="mare">209 000 locuitori</p>
+                    <p class="mic">Populatie</p>
+                </li>
+                <li>
+                    <p class="mare">3.990 loc./km²</p>
+                    <p class="mic">Densitate</p>
+                </li>
+            </ul>
+            <div class="main-citat">
+                <div id="gh1">
+                    <img src="poze/ghilimele.jpg" alt="&quot;">
+                </div>
+                <div>
+                    Cea mai veche Întorsură<br>Nu-i pe hartă! – e-n poveşti<br>Scrise de-i cu colţi în gură<br>Şi trimise la Ploieşti.
+                </div>
+                <div id="gh2">
+                    <img src="poze/ghilimele.jpg" alt="&quot;">
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

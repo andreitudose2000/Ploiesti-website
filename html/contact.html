@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Orasul Ploiesti </title>
+    <link rel="stylesheet" href="css/stil.css">
+    <link rel="icon"
+        href="https://s12emagst.akamaized.net/products/5232/5231899/images/res_ab953fbc8cb13ee773cd21c58385d45b_full.jpg">
+</head>
+
+<body>
+    <header>
+        <img src="poze/logoploiesti.jpg" alt="Ploiesti" class="logo">
+        <div class="account">
+            <p id="account-log"> Logat ca </p>
+            <button id="account-logout" onclick="logout()"> Logout </button>
+        </div>
+        <nav>
+            MENIU
+            <div class="dropdown">
+                <ul class="stanga">
+                    <li> <a href="main.html">Acasa</a></li>
+                    <li> <a href="istorie.html">Istorie</a></li>
+                    <li> <a href="atractii.html">Atractii</a></li>
+                    <li> <a href="harti.html">Harta </a></li>
+                    <li> <a href="contact.html">Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <script src="scripts/myscript.js"></script>
+    <div class="twocolumns">
+
+        <div name="formular" id="formular-contact">
+            <p class="formular-text"> Nume </p>
+            <input type="text" id="formular-nume" placeholder="Nume (obligatoriu)">
+            <p class="formular-avertisment" id="avnume"> Camp obligatoriu! </p>
+
+            <p class="formular-text"> Email </p>
+            <input type="text" id="formular-email" placeholder="Email (obligatoriu)">
+            <p class="formular-avertisment" id="avemail1"> Camp obligatoriu! </p>
+            <p class="formular-avertisment" id="avemail2"> Email incorect! </p>
+
+            <p class="formular-text"> Comentariu </p>
+            <textarea id="formular-comentariu" placeholder="Comentariul tau ..."></textarea>
+            <p class="formular-avertisment" id="avcomentariu"> Comentariul nu poate sa fie vid </p>
+
+            <p class="formular-text"> Nr de telefon </p>
+            <input type="text" id="formular-telefon" placeholder="Numar de telefon (obligatoriu)">
+            <p class="formular-avertisment" id="avtelefon1"> Camp obligatoriu! </p>
+            <p class="formular-avertisment" id="avtelefon2"> Numar telefon incorect </p>
+
+            <br><button class="formular-buton" onclick='validare()'>Trimite</button>
+            <p id="p-counter">Respondenti: 0</p>
+        </div>
+
+        <div class="divtabel">
+            <table id="tabel-contact">
+                <tr>
+                    <th>Nume</th>
+                    <th>Email</th>
+                    <th>Telefon</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

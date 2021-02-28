@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+
+<header>
+    <img src="../public/img/logoploiesti.jpg" alt="Ploiesti" class="logo">
+    <div class="account">
+        <p id="varsta"> Varsta dvs: </p>
+        <button id="account-logout" onclick="logout()"> Logout </button>
+    </div>
+    <nav>
+        MENIU
+        <div class="dropdown">
+            <ul class="stanga">
+                <li> <a href="/acasa" id="meniu-acasa">Acasa</a></li>
+                <li> <a href="/istorie" id="meniu-istorie">Istorie</a></li>
+                <li> <a href="/atractii" id="meniu-atractii">Atractii</a></li>
+                <li> <a href="/harti" id="meniu-harta">Harta </a></li>
+                <li> <a href="/contact" id="meniu-contact">Contact </a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<section class="show">
+    <div class="atr">
+        <img src="../public/img/muzeulceasului.jpg" alt="muzeul ceasului" width="300px">
+        <div class="texthover">
+            Muzeul ceasului
+        </div>
+    </div>
+    <div class="atr">
+        <img src="../public/img/hipodrom.jpg" alt="hipodromul" width="300px">
+        <div class="texthover">
+            Hipodromul din<br>Ploiesti
+        </div>
+    </div>
+    <div class="atr">
+        <img src="../public/img/casatargovet.jpg" alt="casa de targovet" width="300px">
+        <div class="texthover">
+            Muzeul Casa<br>de Târgoveț
+        </div>
+    </div>
+    <div class="atr">
+        <img src="../public/img/muzeulpetrolului.jpg" alt="muzeul petrolului" width="300px">
+        <div class="texthover">
+            Muzeul petrolului
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>

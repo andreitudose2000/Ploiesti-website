@@ -1,0 +1,84 @@
+<%- include('partials/header') %>
+
+<header>
+    <img src="../public/img/logoploiesti.jpg" alt="Ploiesti" class="logo">
+    <div class="account">
+        <p id="varsta"> Varsta dvs: </p>
+        <button id="account-logout" onclick="logout()"> Logout </button>
+    </div>
+    <nav>
+        MENIU
+        <div class="dropdown">
+            <ul class="stanga">
+                <li> <a href="/acasa" id="meniu-acasa">Acasa</a></li>
+                <li> <a href="/istorie" id="meniu-istorie">Istorie</a></li>
+                <li> <a href="/atractii" id="meniu-atractii">Atractii</a></li>
+                <li> <a href="/harti" id="meniu-harta">Harta </a></li>
+                <li> <a href="/contact" id="meniu-contact">Contact </a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="main-container">
+    <img src="../public/img/panorama.jpg" alt="panorama" class="main-poza">
+    <div class="ploiesti">
+        <h1>Ploiesti</h1>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="OraVremea">
+    <p class="main-ora-text"> Ora Curentă (GMT+3)</p>
+    <p class="main-ora" id="ora">00:00</p>
+    <p class="main-ora"></p>
+
+    <p class="main-vremea-text">Vremea în Ploiești</p>
+    <div class="Vremea">
+        <div><img src="https://image.flaticon.com/icons/svg/497/497208.svg" id="vremea-icon" width="70px" height="70px">
+        </div>
+        <div class="main-vremea" id="vremea">00°C</div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="main-trivia">
+    <ul>
+        <li>
+            <p class="mare">1503</p>
+            <p class="mic">Prima atestare documentara</p>
+        </li>
+        <li>
+            <p class="mare">209 000 locuitori</p>
+            <p class="mic">Populatie</p>
+        </li>
+        <li>
+            <p class="mare">3.990 loc./km²</p>
+            <p class="mic">Densitate</p>
+        </li>
+    </ul>
+    <div class="main-citat">
+        <div id="gh1">
+            <img src="../public/img/ghilimele.jpg" alt="&quot;">
+        </div>
+        <div>
+            Cea mai veche Întorsură<br>Nu-i pe hartă! – e-n poveşti<br>Scrise de-i cu colţi în gură<br>Şi trimise la
+            Ploieşti.
+        </div>
+        <div id="gh2">
+            <img src="../public/img/ghilimele.jpg" alt="&quot;">
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

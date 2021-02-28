@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<header>
+    <img src="../public/img/logoploiesti.jpg" alt="Ploiesti" class="logo">
+    <div class="account">
+        <p id="varsta"> Varsta dvs: </p>
+        <button id="account-logout" onclick="logout()"> Logout </button>
+    </div>
+    <nav>
+        MENIU
+        <div class="dropdown">
+            <ul class="stanga">
+                <li> <a href="/acasa" id="meniu-acasa">Acasa</a></li>
+                <li> <a href="/istorie" id="meniu-istorie">Istorie</a></li>
+                <li> <a href="/atractii" id="meniu-atractii">Atractii</a></li>
+                <li> <a href="/harti" id="meniu-harta">Harta </a></li>
+                <li> <a href="/contact" id="meniu-contact">Contact </a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div>
+    <img src="../public/img/harta1.jpg" alt="harta1" class="fit">
+</div>
+
+<%- include('partials/footer') %>

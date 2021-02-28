@@ -1,0 +1,474 @@
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Ultra&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Jura:300&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Parisienne&display=swap);
+
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+header{
+    display: flex;  
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    height: 15%;
+}
+.logo{
+    width: 10%;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+
+nav{  
+    margin-right: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.dropdown{
+    display: none;
+    position: absolute;
+    right: 10px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown a:hover {background-color: #f1f1f1}
+  
+nav:hover{
+    cursor: pointer;
+    
+}
+nav:hover .dropdown{
+    display: block;
+    color: #48699c;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    animation: galbenalbastrugri 1.2s;
+}
+  
+.stanga{
+    left: auto;
+    right: 0;
+}
+.main-container{
+    margin-top: 5%;
+    position: relative;
+    text-align: center;
+}
+.main-poza{
+    width: 100%;
+    display: flex;
+}
+
+.ploiesti{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px
+
+}
+
+.ploiesti h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 10em;
+    margin: 0;
+    opacity: 60%;
+    cursor: pointer;
+    color: yellow;
+    
+}
+.ploiesti h1:hover{
+    animation: albastru 1s;
+    color: blue;
+}
+
+
+
+
+.OraVremea{
+    text-align: center;
+    background-color: lightgray;
+}
+
+.main-ora-text, .main-vremea-text{
+    font-size: 30px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    margin-bottom: 0px; 
+}
+.main-ora, .main-vremea{
+    margin-top: 0px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Vremea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-vremea
+{
+    display: block;
+}
+
+
+
+
+
+.main-trivia{
+    text-align: center;
+    width: 100%;
+}
+
+.main-trivia ul{
+    list-style-type: none;
+}
+
+.mare{
+    background-color: blue;
+    font-size: 3em;
+    color: white;
+    font-family: 'Ultra';
+    margin-bottom: 0;
+    text-shadow: 5px 5px 12px black;
+    
+}
+.mare:hover{
+    animation: mare1 0.5s forwards;
+    cursor: pointer;
+}
+
+
+.mic{
+    font-family: 'Jura';
+    font-size: 1.2em;
+    background-color: yellow;
+}
+
+.main-citat{
+    font-family: 'Parisienne';
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+#gh1{
+    text-align: left;
+    margin-left: 40%;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+#gh2{
+    text-align: right;
+    margin-right: 40%;
+    margin-top:0;
+}
+@media only screen and (max-width: 750px)
+{
+    header{
+        height: 10%;
+    }
+    nav ul li{
+        font-size: 1.2em;
+    }
+    .ploiesti h1{
+        font-size: 5em;
+    }
+
+    .mare{
+        font-size: 1.6em;
+    }
+    .mic{
+        font-size: 0.7em;
+    }
+
+    nav ul li{
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    header{
+        height: 7%;
+    }
+    nav ul li{
+        font-size: 0.8em;
+    }
+}
+
+
+
+@keyframes galbenalbastrugri{
+    0%{
+        color: black;
+    }
+    30%{
+        color: #d1c45e;
+    }
+    44%{
+        color: #d1c45e;
+    }
+    70%{
+        color: #48699c;
+    }
+    100%{
+        color: #48699c;
+    }
+}
+
+@keyframes mare1{
+    100%{
+        color: lightgray;
+    }
+}
+
+@keyframes albastru{
+    0%{
+        color: yellow;
+    }
+    100%{
+        color: blue;
+    }
+}
+
+
+.istorie-container{
+    display: flex;
+}
+
+.istorie-container div{
+    border: 1px rgba(0, 0, 0, 0.685);
+    padding: 10px;
+}
+
+.videos{
+    text-align: center;
+}
+
+.fit{
+    width: 100%;
+}
+
+
+.show{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 70px;
+    margin-bottom: 0;   
+}
+
+.show .atr{
+    padding: 0%;
+    width: 20%;
+    min-width: 300px;
+}
+
+
+.show .atr:hover{
+    animation: transp 1s forwards;
+    cursor: pointer;
+}
+
+
+.texthover{
+    display: none;
+    position: relative;
+    bottom: 50%;
+    text-align: center;
+    color: white;
+    font-family: 'Pacifico';
+    font-size: 2.5em;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+.show .atr:hover .texthover{
+    display: inherit ;
+} 
+
+
+@keyframes transp{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.7;
+        filter: grayscale(100%);
+    }
+}
+
+.twocolumns{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divtabel{
+    margin: 100px 0px 0px 0px;
+}
+
+#formular-contact{
+    margin: 90px 120px 0px 0px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.formular-text{
+    margin: 18px 0px 7px 0px;
+}
+
+textarea, input[type="text"]{
+    width: 400px;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
+
+
+.formular-avertisment{
+    display: none;
+    margin: 0px;
+    font-size: 12px;
+    color: red;
+}
+
+.formular-avertisment-on{
+    display: block;
+}
+
+#formular-comentariu
+{
+    vertical-align: top;
+    resize: none;
+    height: 120px;
+}
+
+.formular-buton{
+    margin: 25px 0px 0px 0px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.formular-buton:hover{
+    cursor: pointer;
+    animation: gri 0.5s forwards;
+}
+
+@keyframes gri{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: lightgray;
+    }
+}
+
+
+#tabel-contact{
+    margin-top: 20px;
+    border: 1px solid darkgrey;
+    width: 700px;
+}
+
+#tabel-contact th{
+    background-color: lightblue;
+}
+#tabel-contact th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+
+.welcome{
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome-mesaj, #welcome-mesaj2
+{
+    font-family: sans-serif;
+}
+
+.welcome-input1
+{
+    display:none;
+}
+.welcome-input2{
+    display:block;
+}
+
+#welcome-warning{
+    display: none;
+    color:red;
+}
+
+#datanasterii-warning{
+    display: none;
+    color:red;
+}
+
+#datanasterii{
+    width:100px;
+    height:40px;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+#meniu-acasa, #meniu-istorie, #meniu-atractii, #meniu-harta, #meniu-contact{
+    color:black;
+}
+
+.curent{
+    background-color: chartreuse;
+}
